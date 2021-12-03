@@ -5,7 +5,6 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "watch": "nodemon",
     "seed": "node config/seeds.js",
     "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
@@ -18,9 +17,7 @@
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.9",
-    "graphql": "^15.5.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.3"
+    "graphql": "^15.5.1",
+    "stripe": "^8.67.0"
   }
 }
